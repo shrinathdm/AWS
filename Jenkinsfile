@@ -14,7 +14,7 @@ pipeline {
         }
         stage('git clone') {
             steps {
-                sh 'sudo rm -r *;sudo git clone '
+                sh 'sudo rm -r *;sudo git clone https://github.com/shrinathdm/AWS.git'
             }
         }
         stage('terraform init') {
